@@ -12,6 +12,7 @@
 		AD2ABD28232D594D008DFAB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2ABD26232D594D008DFAB2 /* Main.storyboard */; };
 		AD2ABD2A232D594E008DFAB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2ABD29232D594E008DFAB2 /* Assets.xcassets */; };
 		AD2ABD2D232D594E008DFAB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2ABD2B232D594E008DFAB2 /* LaunchScreen.storyboard */; };
+		AD2ABD35232D7797008DFAB2 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AD2ABD34232D7797008DFAB2 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AD2ABD29232D594E008DFAB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD2ABD2C232D594E008DFAB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD2ABD2E232D594E008DFAB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD2ABD34232D7797008DFAB2 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				AD2ABD22232D594D008DFAB2 /* AppDelegate.swift */,
 				AD2ABD24232D594D008DFAB2 /* ViewController.swift */,
+				AD2ABD34232D7797008DFAB2 /* Resnet50.mlmodel */,
 				AD2ABD26232D594D008DFAB2 /* Main.storyboard */,
 				AD2ABD29232D594E008DFAB2 /* Assets.xcassets */,
 				AD2ABD2B232D594E008DFAB2 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2ABD25232D594D008DFAB2 /* ViewController.swift in Sources */,
+				AD2ABD35232D7797008DFAB2 /* Resnet50.mlmodel in Sources */,
 				AD2ABD23232D594D008DFAB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +286,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5CP9ZYWG7;
 				INFOPLIST_FILE = MiMelons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +296,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sophieqin.MiMelons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +306,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5CP9ZYWG7;
 				INFOPLIST_FILE = MiMelons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sophieqin.MiMelons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
