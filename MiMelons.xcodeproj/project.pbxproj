@@ -10,10 +10,17 @@
 		AD2ABD23232D594D008DFAB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2ABD22232D594D008DFAB2 /* AppDelegate.swift */; };
 		AD2ABD2A232D594E008DFAB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2ABD29232D594E008DFAB2 /* Assets.xcassets */; };
 		AD2ABD2D232D594E008DFAB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2ABD2B232D594E008DFAB2 /* LaunchScreen.storyboard */; };
+		AD39B919232DF2E6006367E6 /* Helper+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39B918232DF2E6006367E6 /* Helper+Extensions.swift */; };
+		AD39B91B232E02BB006367E6 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD39B91A232E02BA006367E6 /* Quicksand-Bold.ttf */; };
 		AD5B83BD232DB7C90053EFF3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B83BB232DB7C90053EFF3 /* CameraViewController.swift */; };
 		AD5B83BE232DB7C90053EFF3 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5B83BC232DB7C90053EFF3 /* CameraViewController.xib */; };
 		AD5B83C1232DB8FE0053EFF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B83BF232DB8FE0053EFF3 /* HomeViewController.swift */; };
 		AD5B83C2232DB8FE0053EFF3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5B83C0232DB8FE0053EFF3 /* HomeViewController.xib */; };
+		AD5B83C4232DC3E80053EFF3 /* ThemeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B83C3232DC3E80053EFF3 /* ThemeButtonView.swift */; };
+		AD5B83C7232DC6D60053EFF3 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B83C5232DC6D60053EFF3 /* HomeTableViewCell.swift */; };
+		AD5B83C8232DC6D60053EFF3 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5B83C6232DC6D60053EFF3 /* HomeTableViewCell.xib */; };
+		AD6A3873232E2E5D00349546 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3871232E2E5D00349546 /* ScrollViewController.swift */; };
+		AD6A3874232E2E5D00349546 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6A3872232E2E5D00349546 /* ScrollViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +29,17 @@
 		AD2ABD29232D594E008DFAB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD2ABD2C232D594E008DFAB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD2ABD2E232D594E008DFAB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD39B918232DF2E6006367E6 /* Helper+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+Extensions.swift"; sourceTree = "<group>"; };
+		AD39B91A232E02BA006367E6 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		AD5B83BB232DB7C90053EFF3 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		AD5B83BC232DB7C90053EFF3 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 		AD5B83BF232DB8FE0053EFF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AD5B83C0232DB8FE0053EFF3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		AD5B83C3232DC3E80053EFF3 /* ThemeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeButtonView.swift; sourceTree = "<group>"; };
+		AD5B83C5232DC6D60053EFF3 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		AD5B83C6232DC6D60053EFF3 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		AD6A3871232E2E5D00349546 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		AD6A3872232E2E5D00349546 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 		AD2ABD21232D594D008DFAB2 /* MiMelons */ = {
 			isa = PBXGroup;
 			children = (
+				AD39B91A232E02BA006367E6 /* Quicksand-Bold.ttf */,
 				AD2ABD22232D594D008DFAB2 /* AppDelegate.swift */,
 				AD2ABD29232D594E008DFAB2 /* Assets.xcassets */,
 				AD2ABD2B232D594E008DFAB2 /* LaunchScreen.storyboard */,
@@ -66,6 +81,12 @@
 				AD5B83BC232DB7C90053EFF3 /* CameraViewController.xib */,
 				AD5B83BF232DB8FE0053EFF3 /* HomeViewController.swift */,
 				AD5B83C0232DB8FE0053EFF3 /* HomeViewController.xib */,
+				AD5B83C5232DC6D60053EFF3 /* HomeTableViewCell.swift */,
+				AD5B83C6232DC6D60053EFF3 /* HomeTableViewCell.xib */,
+				AD5B83C3232DC3E80053EFF3 /* ThemeButtonView.swift */,
+				AD39B918232DF2E6006367E6 /* Helper+Extensions.swift */,
+				AD6A3871232E2E5D00349546 /* ScrollViewController.swift */,
+				AD6A3872232E2E5D00349546 /* ScrollViewController.xib */,
 			);
 			path = MiMelons;
 			sourceTree = "<group>";
@@ -129,8 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2ABD2D232D594E008DFAB2 /* LaunchScreen.storyboard in Resources */,
+				AD39B91B232E02BB006367E6 /* Quicksand-Bold.ttf in Resources */,
 				AD5B83BE232DB7C90053EFF3 /* CameraViewController.xib in Resources */,
+				AD6A3874232E2E5D00349546 /* ScrollViewController.xib in Resources */,
 				AD2ABD2A232D594E008DFAB2 /* Assets.xcassets in Resources */,
+				AD5B83C8232DC6D60053EFF3 /* HomeTableViewCell.xib in Resources */,
 				AD5B83C2232DB8FE0053EFF3 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,8 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2ABD23232D594D008DFAB2 /* AppDelegate.swift in Sources */,
+				AD5B83C7232DC6D60053EFF3 /* HomeTableViewCell.swift in Sources */,
 				AD5B83BD232DB7C90053EFF3 /* CameraViewController.swift in Sources */,
+				AD6A3873232E2E5D00349546 /* ScrollViewController.swift in Sources */,
 				AD5B83C1232DB8FE0053EFF3 /* HomeViewController.swift in Sources */,
+				AD5B83C4232DC3E80053EFF3 /* ThemeButtonView.swift in Sources */,
+				AD39B919232DF2E6006367E6 /* Helper+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5CP9ZYWG7;
 				INFOPLIST_FILE = MiMelons/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sophieqin.MiMelons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5CP9ZYWG7;
 				INFOPLIST_FILE = MiMelons/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sophieqin.MiMelons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
