@@ -14,6 +14,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var daysLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    private let dateArray = ["12/08/19", "06/07/19", "19/06/19", "03/06/19", "13/05/19"]
+    private let imageArray = [UIImage(named: "1.pdf"), UIImage(named: "2.pdf"), UIImage(named: "3.pdf"), UIImage(named: "2.pdf"), UIImage(named: "2.pdf")]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = Theme.backgroundColor()
@@ -21,11 +25,17 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
+        tableView.backgroundColor = Theme.backgroundColor()
         
         titleLabel.textColor = Theme.textColor()
         titleLabel.text = "Welcome back ~"
         daysLabel.textColor = Theme.textColor()
-        daysLabel.text = "3 DAYS LEFT"
+        daysLabel.text = "DAYS LATE"
+        
+        for family in UIFont.familyNames.sorted() {
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font names: \(names)")
+        }
     }
 
 }
@@ -34,17 +44,36 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 136
     }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 73
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return ThemeButtonView(frame: CGRect(x: 8, y: 0, width: UIScreen.main.bounds.width, height: 65), title: "Start Checkup")
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: HomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "homeTableViewCell", for: indexPath) as! HomeTableViewCell
+        cell.dateLabel.text = dateArray[indexPath.item]
+        let imageView = UIImageView()
+        imageView.image = imageArray[indexPath.item]
+        cell.symptomImageView = imageView
+        
         cell.selectionStyle = .none
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
     }
     
 }

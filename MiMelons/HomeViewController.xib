@@ -36,20 +36,20 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_days" translatesAutoresizingMaskIntoConstraints="NO" id="7Ju-HH-5W5">
-                    <rect key="frame" x="175" y="126" width="64" height="64"/>
+                    <rect key="frame" x="162" y="126" width="90" height="99"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="64" id="oi2-4m-Pv3" userLabel="height = 99"/>
-                        <constraint firstAttribute="width" constant="64" id="zh7-Tn-Hzo" userLabel="width = 90"/>
+                        <constraint firstAttribute="height" constant="99" id="oi2-4m-Pv3" userLabel="height = 99"/>
+                        <constraint firstAttribute="width" constant="90" id="zh7-Tn-Hzo" userLabel="width = 90"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAYS LATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaK-bW-98M">
-                    <rect key="frame" x="140.5" y="207" width="133" height="32.5"/>
+                    <rect key="frame" x="140.5" y="242" width="133" height="32.5"/>
                     <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand Light" pointSize="26"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ae1-Qr-4WW">
-                    <rect key="frame" x="0.0" y="261.5" width="414" height="634.5"/>
+                    <rect key="frame" x="0.0" y="296.5" width="414" height="599.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
