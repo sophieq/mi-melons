@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MiMelons/HomeViewController.swift"
-            timestampString = "590239360.956164"
+            filePath = "MiMelons/CameraViewController.swift"
+            timestampString = "590240599.984799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "buildUI()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,108 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MiMelons/HomeViewController.swift"
-            timestampString = "590239360.95632"
+            timestampString = "590240599.9850301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "tableView(_:viewForFooterInSection:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MiMelons.HomeViewController.tableView(_: __C.UITableView, viewForFooterInSection: Swift.Int) -&gt; Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "MiMelons"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophieqin/Desktop/MiMelons/MiMelons/HomeViewController.swift"
+                  timestampString = "590240600.4500951"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MiMelons.HomeViewController.tableView(_: __C.UITableView, viewForFooterInSection: Swift.Int) -&gt; Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "MiMelons"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophieqin/Desktop/MiMelons/MiMelons/HomeViewController.swift"
+                  timestampString = "590240600.457471"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiMelons/ThemeButtonView.swift"
+            timestampString = "590240599.985924"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "onTap"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MiMelons.ThemeButtonView.__allocating_init(frame: __C.CGRect, title: Swift.String) -&gt; MiMelons.ThemeButtonView"
+                  moduleName = "MiMelons"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophieqin/Desktop/MiMelons/MiMelons/ThemeButtonView.swift"
+                  timestampString = "590239717.444868"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "14">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MiMelons.ThemeButtonView.init(frame: __C.CGRect, title: Swift.String) -&gt; MiMelons.ThemeButtonView"
+                  moduleName = "MiMelons"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophieqin/Desktop/MiMelons/MiMelons/ThemeButtonView.swift"
+                  timestampString = "590239717.448911"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiMelons/ThemeButtonView.swift"
+            timestampString = "590240599.986055"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "onClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +138,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MiMelons/CameraViewController.swift"
-            timestampString = "590239360.956436"
+            timestampString = "590240599.986184"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "buildUI()"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "onClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

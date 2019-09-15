@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private let dateArray = ["12/08/19", "06/07/19", "19/06/19", "03/06/19", "13/05/19"]
-    private let imageArray = [UIImage(named: "1.pdf"), UIImage(named: "2.pdf"), UIImage(named: "3.pdf"), UIImage(named: "2.pdf"), UIImage(named: "2.pdf")]
+    private let imageArray = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "1"), UIImage(named: "3")]
     
     
     override func viewDidLoad() {
@@ -31,11 +31,7 @@ class HomeViewController: UIViewController {
         titleLabel.text = "Welcome back ~"
         daysLabel.textColor = Theme.textColor()
         daysLabel.text = "DAYS LATE"
-        
-        for family in UIFont.familyNames.sorted() {
-            let names = UIFont.fontNames(forFamilyName: family)
-            print("Family: \(family) Font names: \(names)")
-        }
+
     }
 
 }
@@ -72,9 +68,9 @@ extension HomeViewController: UITableViewDataSource {
         let cell: HomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "homeTableViewCell", for: indexPath) as! HomeTableViewCell
         cell.dateLabel.text = dateArray[indexPath.item]
         let imageView = UIImageView()
-        imageView.image = imageArray[indexPath.item]
+        let image = imageArray[indexPath.item]
+        imageView.image = image
         cell.symptomImageView = imageView
-        
         cell.selectionStyle = .none
         return cell
     }

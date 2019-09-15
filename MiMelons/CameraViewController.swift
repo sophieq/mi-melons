@@ -14,7 +14,11 @@ class CameraViewController: UIViewController {
     let traceImageView = UIImageView(frame: CGRect(x: 0, y: 150, width: UIScreen.main.bounds.width, height: 500))
     let button = UIButton(frame: CGRect(x: 21, y: 700, width: 333, height: 59))
     let closeButton = UIButton()
-    @objc var onTap:(()->())? = nil
+    var onTap: (()->())? {
+        didSet {
+            button.addTarget(self, action: #selector(onClick(_:)), for: .touchUpInside)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +52,6 @@ class CameraViewController: UIViewController {
         view.addSubview(button)
         button.backgroundColor = UIColor(red: 190/255, green: 206/255, blue: 139/255, alpha: 1)
         button.setTitle("I'm done!", for: .normal)
-        button.addTarget(self, action: #selector(getter: onTap), for: .touchUpInside)
         button.setTitleColor(.white, for: .normal)
         
         button.layer.cornerRadius = 30
@@ -66,6 +69,11 @@ class CameraViewController: UIViewController {
         traceImageView.image = trace
         traceImageView.contentMode = .scaleToFill
         view.addSubview(traceImageView)
+    }
+    
+    @objc func onClick(_ sender: UIButton) {
+        guard let closure = onTap else { return }
+        closure()
     }
 
 }

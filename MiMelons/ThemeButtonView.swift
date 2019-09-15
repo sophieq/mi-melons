@@ -11,7 +11,11 @@ import UIKit
 class ThemeButtonView: UIView {
     let button = UIButton(frame: CGRect(x: 21, y: 0, width: 333, height: 59))
     
-    @objc var onTap: (()->())?
+    var onTap: (()->())? {
+        didSet {
+            button.addTarget(self, action: #selector(onClick(_:)), for: .touchUpInside)
+        }
+    }
     
     init(frame: CGRect, title: String) {
         super.init(frame: frame)
@@ -20,7 +24,6 @@ class ThemeButtonView: UIView {
         addSubview(button)
         button.backgroundColor = UIColor(red: 190/255, green: 206/255, blue: 139/255, alpha: 1)
         button.setTitle(title, for: .normal)
-        button.addTarget(self, action: #selector(getter: onTap), for: .touchUpInside)
         button.setTitleColor(.white, for: .normal)
         
         button.layer.cornerRadius = 30
@@ -31,6 +34,11 @@ class ThemeButtonView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc func onClick(_ sender: UIButton) {
+        guard let closure = onTap else { return }
+        closure()
     }
     
 }
