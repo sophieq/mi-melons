@@ -10,11 +10,16 @@ import UIKit
 import AVFoundation
 
 class CameraViewController: UIViewController {
+    let imageView = UIImageView(frame: CGRect(x: 57, y: 260, width: 268, height: 268))
+    let traceImageView = UIImageView(frame: CGRect(x: 0, y: 150, width: UIScreen.main.bounds.width, height: 500))
+    let button = UIButton(frame: CGRect(x: 21, y: 700, width: 333, height: 59))
+    let closeButton = UIButton()
+    @objc var onTap:(()->())? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        openCamera()
+        buildUI()
     }
 
     func openCamera() {
@@ -35,30 +40,32 @@ class CameraViewController: UIViewController {
         
         captureSession.addOutput(imageOutput)
         captureSession.startRunning()
-        
     }
     
-    @objc func buttonClicked(sender: UIButton!) {
-        let captureSettings = AVCapturePhotoSettings()
-        let previewPixelType = captureSettings.availablePreviewPhotoPixelFormatTypes.first!
-        let previewFormat = [kCVPixelBufferPixelFormatTypeKey as String: previewPixelType,
-                             kCVPixelBufferWidthKey as String: 300,
-                             kCVPixelBufferHeightKey as String: 300,
-        ]
-        captureSettings.previewPhotoFormat = previewFormat
-        
-    }
     
     func buildUI() {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        view.addSubview(button)
-        button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
-    }
-    
-    
-    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         
+        view.addSubview(button)
+        button.backgroundColor = UIColor(red: 190/255, green: 206/255, blue: 139/255, alpha: 1)
+        button.setTitle("I'm done!", for: .normal)
+        button.addTarget(self, action: #selector(getter: onTap), for: .touchUpInside)
+        button.setTitleColor(.white, for: .normal)
+        
+        button.layer.cornerRadius = 30
+        button.layer.shadowColor = UIColor(red: 190/255, green: 206/255, blue: 139/255, alpha: 0.39).cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 7)
+        button.layer.shadowRadius = 15 / 2
+        
+        let image: UIImage = UIImage(named: "circle")!
+        let tintedImage = image.withRenderingMode(.alwaysTemplate)
+        imageView.tintColor = .white
+        imageView.image = tintedImage
+        view.addSubview(imageView)
+        
+        let trace = UIImage(named: "wave")!
+        traceImageView.image = trace
+        traceImageView.contentMode = .scaleToFill
+        view.addSubview(traceImageView)
     }
-    
 
 }

@@ -53,7 +53,15 @@ extension HomeViewController: UITableViewDelegate {
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return ThemeButtonView(frame: CGRect(x: 8, y: 0, width: UIScreen.main.bounds.width, height: 65), title: "Start Checkup")
+        let view = ThemeButtonView(frame: CGRect(x: 8, y: 0, width: UIScreen.main.bounds.width, height: 65), title: "Start Checkup")
+        view.onTap = {
+            let vc: CameraViewController = CameraViewController()
+            vc.onTap = {
+                self.dismiss(animated: true, completion: nil)
+            }
+            self.present(vc, animated: true, completion: nil)
+        }
+        return view
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -70,10 +78,4 @@ extension HomeViewController: UITableViewDataSource {
         cell.selectionStyle = .none
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
-    }
-    
 }
