@@ -16,9 +16,16 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = Theme.backgroundColor()
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "homeTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
+        
+        titleLabel.textColor = Theme.textColor()
+        titleLabel.text = "Welcome back ~"
+        daysLabel.textColor = Theme.textColor()
+        daysLabel.text = "3 DAYS LEFT"
     }
 
 }
@@ -36,6 +43,7 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: HomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "homeTableViewCell", for: indexPath) as! HomeTableViewCell
+        cell.selectionStyle = .none
         return cell
     }
     
