@@ -11,7 +11,7 @@ import AVFoundation
 
 class CameraViewController: UIViewController {
     let imageView = UIImageView(frame: CGRect(x: 57, y: 260, width: 268, height: 268))
-    let traceImageView = UIImageView(frame: CGRect(x: 0, y: 150, width: UIScreen.main.bounds.width, height: 500))
+    let traceImageView = UIImageView(frame: CGRect(x: 57, y: 230, width: 268, height: 320))
     let button = UIButton(frame: CGRect(x: 21, y: 700, width: 333, height: 59))
     let closeButton = UIButton()
     var onTap: (()->())? {
@@ -65,9 +65,10 @@ class CameraViewController: UIViewController {
         imageView.image = tintedImage
         view.addSubview(imageView)
         
-        let trace = UIImage(named: "wave")!
-        traceImageView.image = trace
-        traceImageView.contentMode = .scaleToFill
+        let trace = UIImage(named: "trace")!
+        let tintedTrace = trace.withRenderingMode(.alwaysTemplate)
+        traceImageView.tintColor = .red
+        traceImageView.image = tintedTrace
         view.addSubview(traceImageView)
     }
     

@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private let dateArray = ["12/08/19", "06/07/19", "19/06/19", "03/06/19", "13/05/19"]
-    private let imageArray = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "1"), UIImage(named: "3")]
+    private let imageArray = [UIImage(named: "1")!, UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "1")!, UIImage(named: "3")!]
     
     
     override func viewDidLoad() {
